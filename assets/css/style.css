@@ -6,9 +6,9 @@
     -webkit-box-sizing: border-box;
 }
 body {
-    background-image: url("assets/images/concrete_seamless.png");
+    background-image: url("../images/concrete_seamless.png");
     background-repeat: no-repeat;
-    background-color: #9e9fa4;
+    background-color: white;
 }
 
 /* Setup the header bar nav items using flex to make name left, nav right */
@@ -70,8 +70,4 @@ header {
 
 .navigation {
     justify-content: space-around;
-}
-
-img {
-    border: 2px sold black;
 }
