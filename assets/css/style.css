@@ -1,57 +1,65 @@
 * {
-    font-family: "SF Pro Display", "Helvetica Neue", Georgia,"Times New Roman",Times,serif;
-  }
-  header {
+    font-family: "SF Pro Display", "Helvetica Neue", Georgia, "Times New Roman", Times, serif;
+    /* includes all except margin in width, height. Way better than default */
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+
+/* Setup the header bar nav items using flex to make name left, nav right */
+header {
     list-style: none;
-    margin: 0; 
+    margin: 0;
     width: 100%;
-    
-    background: deepskyblue;
-    color: white;
-  
+
     display: -webkit-box;
     display: -moz-box;
     display: -ms-flexbox;
     display: -webkit-flex;
     display: flex;
-    
+
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-  }
-  
-  .title {
-    padding: 10px;
-  }
-  
-  .navigation {
+
+    background: #ffffff;
+    color: #9e9fa4;
+    border-bottom: 2px solid #cccccc;
+}
+
+.title {
+    padding-left: 30px;
+}
+
+.navigation {
     list-style: none;
-    margin: 0; 
-    
+    margin: 0;
+
     display: -webkit-box;
     display: -moz-box;
     display: -ms-flexbox;
     display: -webkit-flex;
     display: flex;
-    
+
     -webkit-flex-flow: row wrap;
     justify-content: flex-end;
-  }
-  .navigation a {
+}
+
+.navigation a {
     text-decoration: none;
     display: block;
     padding: 1em;
-    color: white;
-  }
-  .navigation a:hover {
-    background-color:rgba(0, 0, 0, 0.1);
-  }
-  .navigation {
-      justify-content: space-around;
-  }
-  
-  img {
-      border: 2px sold black;
-  }
-  
-  
+    color: #9e9fa4;
+}
+
+.navigation a:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+.navigation {
+    justify-content: space-around;
+}
+
+img {
+    border: 2px sold black;
+}
