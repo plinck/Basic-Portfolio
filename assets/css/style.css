@@ -5,6 +5,11 @@
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
 }
+body {
+    background-image: url("assets/images/concrete_seamless.png");
+    background-repeat: no-repeat;
+    background-color: #9e9fa4;
+}
 
 /* Setup the header bar nav items using flex to make name left, nav right */
 header {
@@ -28,7 +33,9 @@ header {
 }
 
 .title {
-    padding-left: 30px;
+    padding: 0 30px 0 30px;
+    background: #4aaaa5;
+    color: #ffffff;
 }
 
 .navigation {
@@ -45,12 +52,17 @@ header {
     justify-content: flex-end;
 }
 
+.line {
+    border-right:1px solid #9e9fa4;   /* line 1 pixel width, length of "Some content" */
+}
+
 .navigation a {
     text-decoration: none;
     display: block;
-    padding: 1em;
+    padding: 0 1em 0 1em;
     color: #9e9fa4;
 }
+
 
 .navigation a:hover {
     background-color: rgba(0, 0, 0, 0.1);
