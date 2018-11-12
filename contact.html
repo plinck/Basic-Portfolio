@@ -39,16 +39,19 @@
         <section id="main-content">
             <h2>Contact</h2>
             <hr>
-            <div id="contactForm" class= "clearfix">
+            <div id="contactForm" class="clearfix">
                 <form action="/action_page.php" target="_blank" method="POST">
                     <p>Name</p>
-                    <input type="text" name="name" placeholder="Paul Linck"><br>
+                    <div class="wrapper">
+                        <input type="text" name="name" placeholder="Paul Linck" />
+                        <button class="close-icon" type="reset"></button>
+                    </div>
                     <p>Email</p>
                     <input type="text" name="email" placeholder="nobody@gmail.com"><br>
                     <p>Message</p>
                     <textarea name="message" placeholder="Fill in your message here..." rows="10"></textarea><br>
                     <input type="submit" value="Submit">
-                  </form>
+                </form>
             </div>
         </section>
     </div>
