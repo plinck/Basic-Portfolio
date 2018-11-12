@@ -104,6 +104,17 @@ header {
     background-color: rgba(0, 0, 0, 0.1);
 }
 
+.navigation a:active { 
+    background-color: #4aaaa5;
+    color: #ffffff;
+}
+
+.navigation a.current { 
+    background-color: #4aaaa5;
+    color: #ffffff;
+}
+
+
 .navigation {
     justify-content: space-around;
 }
