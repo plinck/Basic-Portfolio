@@ -73,7 +73,6 @@ footer {
     display: -webkit-flex;
     display: flex;
 
-    -webkit-flex-flow: row wrap;
     justify-content: flex-end;
 }
 
