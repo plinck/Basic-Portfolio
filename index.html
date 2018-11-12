@@ -13,21 +13,24 @@
 <body>
     <!-- Header and Navigation on all pages -->
     <header>
-        <div class="title">
-            <h1>Paul Linck</h1>
-        </div>
-        <!-- Nav items uses <div> vs <ul> due to errors on html checker stuff -->
-        <!-- I think this should really be a <ul> but the checker says I can not -->
-        <!-- have <div> inside of <ul> due to flow-content issues -->
-        <nav>
-            <div class="navigation">
-                <div><a href="#">About</a></div>
-                <div class="line"></div>
-                <div><a href="#">Portfolio</a></div>
-                <div class="line"></div>
-                <div><a href="#">Contact</a></div>
+        <!-- Create inner div to make left and right items line up properly with content -->
+        <div class="innerFlex">
+            <div class="title">
+                <h1>Paul Linck</h1>
             </div>
-        </nav>
+            <!-- Nav items uses <div> vs <ul> due to errors on html checker stuff -->
+            <!-- I think this should really be a <ul> but the checker says I can not -->
+            <!-- have <div> inside of <ul> due to flow-content issues -->
+            <nav>
+                <div class="navigation">
+                    <div><a href="index.html">About</a></div>
+                    <div class="line"></div>
+                    <div><a href="portfolio.html">Portfolio</a></div>
+                    <div class="line"></div>
+                    <div><a href="contact.html">Contact</a></div>
+                </div>
+            </nav>
+        </div>
     </header>
 
     <!-- Section 1: Bio -->
@@ -35,7 +38,7 @@
         <section id="main-bio">
             <h2>About Me</h2>
             <hr>
-            <div>
+            <div class="clearfix">
                 <img id="bio-image" src="http://gritanddirt.com/wp-content/uploads/2018/01/238_m-100789309-DIGITAL_HIGHRES-1835_153083-12360305-e1517229117122.jpg"
                     alt="Paul Linck Picture">
                 <p>Paul gradutaded from Purdue University in 1987 with a BS
@@ -67,22 +70,12 @@
                     treatment from June 2016 to June 2017. He completed this race in October 2017.
                 </p>
             </div>
+            <div class="push"></div>
         </section>
     </div>
     <footer>
-            Copyright &COPY; 
+        Copyright &COPY;
     </footer>
-        
-
-    <!-- Just show images of instructions for now -->
-    <img src="images/portfolio-about-me.png" alt="About Me">
-    <br>
-    <img src="images/portfolio-contact.png" alt="Contact">
-    <br>
-    <img src="images/portfolio-gallery.png" alt="Gallery">
-    <br>
-    <img src="images/Recommended-Dimensions.png" alt="Recommended Dimensions">
-    <br>
 </body>
 
 </html>
