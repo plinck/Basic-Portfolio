@@ -40,17 +40,15 @@
             <h2>Contact</h2>
             <hr>
             <div id="contactForm" class="clearfix">
-                <form action="/action_page.php" target="_blank" method="POST">
+                <form id="infoSubmit" action="mailto:nobody@gmail.com" method="post" enctype="text/plain">
                     <p>Name</p>
-                    <div class="wrapper">
-                        <input type="text" name="name" placeholder="Paul Linck" />
-                        <button class="close-icon" type="reset"></button>
-                    </div>
+                    <input type="text" name="name" placeholder="Paul Linck" /><br>
                     <p>Email</p>
-                    <input type="text" name="email" placeholder="nobody@gmail.com"><br>
+                    <input id="emailAddr" type="text" name="email" placeholder="nobody@gmail.com"><br>
                     <p>Message</p>
                     <textarea name="message" placeholder="Fill in your message here..." rows="10"></textarea><br>
-                    <input type="submit" value="Submit">
+                    <input id="submit" type="submit" value="Submit">
+                    <button type="reset" value="Clear">Clear</button>
                 </form>
             </div>
         </section>

@@ -8,6 +8,14 @@ structure for html/css/js projects
 /* Wait until window is loaded to bind elements */
 window.onload = function() {
 
-    document.getElementById("mainImage").addEventListener("click", function () { myMove(); });
+    document.getElementById("submit").addEventListener("click", function () { emailUser(); });
   
 };
+
+// Grab the email from the form and invoke the mail app to send the mail
+function emailUser() {
+    var emailString = document.getElementById("emailAddr").value + "?Subject=Paul Linck's Email Form Submission";
+
+    document.getElementById('infoSubmit').action = 'mailto:' + emailString;
+
+}
