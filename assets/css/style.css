@@ -96,7 +96,7 @@ header {
     padding: 4px 1em 4px 1em;
     margin: 2px;
     color: #9e9fa4;
-    z-index: 0;  
+    z-index: 0;
 }
 
 
@@ -105,13 +105,14 @@ header {
 
     box-shadow: 0 0 8px 8px rgba(176, 224, 238, 1.0);
     border: 1px solid #777777;
-    z-index: 2;  /* Try to put on top of all other nav items */
+    z-index: 2;
+    /* Try to put on top of all other nav items */
 }
 
 .navigation a:active {
     background-color: #4aaaa5;
     color: #ffffff;
-    z-index: 1; 
+    z-index: 1;
 }
 
 .navigation a.current {
@@ -194,7 +195,8 @@ input[type=text],
 textarea {
     width: 100%;
     border-radius: 2px;
-    padding-left: 2px;  /* Since we have a radius */
+    padding-left: 2px;
+    /* Since we have a radius */
 }
 
 input:focus,
@@ -203,7 +205,7 @@ textarea:focus {
     color: black;
 
     box-shadow: 0 0 15px 5px #b0e0ee;
-    border: 2px solid #bebede;    
+    border: 2px solid #bebede;
 }
 
 textarea {
@@ -220,10 +222,58 @@ button[type=reset] {
     background: #4aaaa5;
     color: #ffffff;
 }
+
 input[type=submit]:hover,
 button[type=reset]:hover {
     background: yellow;
     color: #777777;
+}
+
+/* Container for all the portfolio items */
+/* This version is using standrad in-line block */
+/* I will also do a flexbox version */
+.portfolio {
+    /*
+    display: flex;
+    flex-flow: row;
+    flex-wrap: wrap;
+    justify-content: left;
+    */
+
+    display: inline-block;
+    overflow: auto;
+    padding: 20px;
+}
+
+/* Each item has an image and a banner with text */
+.portfolio-item {
+    display: inline-block;
+    position: relative;
+    padding: 0px 40px 40px 0px;
+}
+
+/* Constrain img and put on bottom */
+.portfolio-item img {
+    width: 275px;
+    height: 200px;
+    z-index: 1;
+}
+
+/* The banner with the text is absolute so it can go on top of image */
+.portfolio-item div {
+    height: 60px;
+    line-height: 60px;
+    width: 275px;
+    padding: 0;
+    margin: 0px 0px 0 0;
+    position: absolute;
+    left: 0px;
+    top: 130px;
+    text-align: center;
+
+    background-color: #4aaaa5;
+    color: white;
+    z-index: 2;
 }
 
 footer {
