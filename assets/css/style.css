@@ -84,6 +84,12 @@ header {
 
     justify-content: flex-end;
 }
+/*
+.navigation {
+    justify-content: space-around;
+}
+*/
+
 
 .line {
     border-right: 1px solid #9e9fa4;
@@ -121,9 +127,6 @@ header {
 }
 
 
-.navigation {
-    justify-content: space-around;
-}
 
 /* ****************************************************************************************
  * the outer container for all page content 
