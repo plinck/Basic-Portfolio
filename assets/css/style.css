@@ -130,6 +130,7 @@ header {
 
 /* ****************************************************************************************
  * the outer container for all page content - i.e. no header or footer
+ * and it also allows that background to show arond the main-content of the page
  * To make sticky, you need 100% height on html, body and min-height on container 
  * I want a bit of background above and below content which is why 
  * I have to have margin include the height of footer to make it happen vs padding
