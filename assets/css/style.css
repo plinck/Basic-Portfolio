@@ -129,18 +129,16 @@ header {
 
 
 /* ****************************************************************************************
- * the outer container for all page content 
- * bottom margin is to make a sticky footer 
- * right now, it intruduces scrollbars since the browser content isnt the *whole* thing 
+ * the outer container for all page content - i.e. no header or footer
  * To make sticky, you need 100% height on html, body and min-height on container 
  * I want a bit of background above and below content which is why 
  * I have to have margin include the height of footer to make it happen vs padding
- * So --to sticky footer-- just make content the Whole page and make the footer 
- * with negative top margin the same amount as its height.
+ * So --to sticky footer-- just make content the whole page less header, footer and margin 
 **************************************************************************************** */
 .container {
     width: 960px;
-    min-height: calc(100vh - 70px);
+    /* Make sticky footer by makinng min-height 100% less heaader, footer and margins */
+    min-height: calc(100vh - 212px);
     /* makes it less than footer for stickimness */
     margin: 35px auto 35px auto;
 
